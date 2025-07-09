@@ -1,0 +1,27 @@
+
+.profile-pic{
+    width: 280px;
+    height: 280px;   
+}
+.name
+{
+    font-weight: bold;
+}
+.lottie-player {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  margin: 0 auto;
+  display: block;
+}
+.socialmedia-icons{
+  font-size: 30px;
+}
+.icons{
+  font-size: 90px;
+}
+.home-img{
+   height: 250px;
+   width: 400px;
+}
