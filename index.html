@@ -204,7 +204,7 @@ Let’s build something great together!
   <div class="row fw-bold  justify-content-center pt-5 pb-4">
     <div class="col-md-6 bg-dark bg-gradient rounded px-5 py-2 mt-4"> 
       <h3 class="text-center  fw-bold" >Contact me</h3>
-      <form>
+      <form onsubmit="submitForm(event)">
         <div class="mb-5">
           <label for="name" class="form-label" required>Name</label>
           <input type="text" class="form-control" id="name">
@@ -219,7 +219,7 @@ Let’s build something great together!
           <input type="text" class="form-control" id="msg">
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-primary mt-4">Submit</button>
+          <button type="submit"  class="btn btn-primary mt-4">Submit</button>
         </div>
       </form>
     </div>
@@ -234,6 +234,16 @@ Let’s build something great together!
 <p class="text-white footer-p">Crafted with HTML, CSS & Bootstrap by Muhammad shahal c</p>
 </div>
 
+<script>
+  function submitForm(e) {
+    e.preventDefault(); // prevent actual form submission
+    alert("Form submitted successfully!");
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
