@@ -24,4 +24,7 @@
 .home-img{
    height: 250px;
    width: 400px;
+}*{
+  overflow-x: none;
+  
 }
